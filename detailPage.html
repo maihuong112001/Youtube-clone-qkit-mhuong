@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="./public/css/style.css" />
+</head>
+
+<body>
+  <div class="app">
+    <header class="wrapper-header wrapper-header-detail">
+      <div class="row inner">
+        <div class="col ml-xl-5 ml-lg-5 mx-md-5 mx-sm-5 pl-ms-5">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+          </button>
+          <div class="collapse navbar-collapse fixed-bottom ml-auto" id="navbarNav">
+            <ul class="navbar-nav">
+              <div class="sidebar">
+                <div class="sidebar-header">
+                  <div class="logo">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+                    </button>
+                    <img class="logo-youtube-sidebar" src="./public/image/logo.jpg" alt="Logo YouTube">
+                  </div>
+                </div>
+                <ul class="sidebar-menu">
+                  <li><i class="bi bi-house-door-fill"></i><a href="#">Trang chủ</a></li>
+                  <li><i class="bi bi-device-ssd"></i><a href="#">Shorts</a></li>
+                  <li><i class="bi bi-collection-play"></i><a href="#">Kênh đăng kí</a></li>
+                  <div class="dropdown-divider"></div>
+                  <li><i class="bi bi-aspect-ratio"></i><a href="#">Thư viện</a></li>
+                  <li><i class="bi bi-alarm"></i><a href="#">Video đã xem</a></li>
+                  <li><i class="bi bi-collection-play"></i><a href="#">Video xem sau</a></li>
+                  <li><i class="bi bi-award"></i><a href="#">Xem sau</a></li>
+                  <li><i class="bi bi-hand-thumbs-up"></i><a href="#">Video đã thíc</a></li>
+                  <li><i class="bi bi-collection-play"></i><a href="#">NGỮ PHÁP TOEIC</a></li>
+                  <div class="dropdown-divider"></div>
+
+                  <li>Kênh đăng kí</li>
+                  <li>
+
+                    <img class="logo-container"
+                      src="https://yt3.ggpht.com/s89kTGn6gqp5TtLCScmJJyq0EYpf72dnNXeNacUkbYLtYKdWUwa8-4U77oq8V5gcJVid37FaVfo=s48-c-k-c0x00ffffff-no-rj"
+                      alt="logo-container">
+                    <a href="#">@ThanhHai</a>
+                  </li>
+                  <li>
+                    <img class="logo-container"
+                      src="https://yt3.ggpht.com/ueLrU3iV27jy17dGmz4y3QB_3_y5Z48kZLvFNJS4Br7RNs1Bg6mFDNuHdizC09iJWfuF1vEBu0g=s68-c-k-c0x00ffffff-no-rj"
+                      alt="logo-container">
+                    <a href="#">@TraGiang</a>
+                  </li>
+                  <li>
+                    <img class="logo-container"
+                      src="https://yt3.ggpht.com/6Rmy6TRlIX5HpybaH3WPn8sjCGOz88zT3HcfxK20buAtOcZ19FeP1C_rhUO7JXgm9f5zH92v=s48-c-k-c0x00ffffff-no-rj"
+                      alt="logo-container">
+                    <a href="#">@MaiHuong</a>
+                  </li>
+                  <div class="dropdown-divider"></div>
+                </ul>
+                <div class="sidebar-footer">
+                  <h5>Giới thiệu báo chí bản quyền liên hệ với chúng tôi, người sáng tạo quảng cáo nhà phát triển</h5>
+                  <p>© 2023 YouTube, LLC</p>
+                </div>
+              </div>
+            </ul>
+          </div>
+          <img src="./public/image/logo.jpg" class="logo-youtube" alt="Logo YouTube">
+        </div>
+
+        <div class="col-6 search-all">
+
+          <div class="search">
+            <input placeholder="Tìm kiếm" spellcheck="false">
+
+            <button class="keyboard">
+              <i class="bi bi-keyboard-fill"></i>
+            </button>
+            <button class="search-btn">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+
+          <button class="mic-fill"><i class="bi bi-mic-fill"></i></button>
+        </div>
+
+
+        <div class="col mr-xl-5 mr-lg-5 mx-md-4 mr-sm-5 action text-right">
+          <!-- <button class="dice-6"><i class="bi bi-dice-6"></i></button> -->
+          <button class="dice-3"><i class="bi bi-three-dots-vertical"></i></button>
+          <button class="button-sign-in "><i class="bi bi-person-circle"></i> SIGN IN</button>
+        </div>
+
+
+      </div>
+    </header>
+
+    <div class="container container-mh mt-5 ">
+      <div class="row mt-5 pt-3 ml-5">
+        <div class="col-12 col-md-12 col-lg-12 col-xl-7">
+          <div class="card">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe style="width: 100%;" class="embed-responsive embed-responsive-16by9" src="https://www.youtube.com/embed/Z5iPD1S84Yc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title card-title-detail">Từng Từng Tứng Tưng Remix - Ngày Hôm Ấy Em Buông Tay Anh Vì Lý Do
+                Gì Remix - Lý Do Là Gì Remix</h5>
+
+              <div class="row">
+                <div class="col-6 col-xl-6 col-lg-4 col-sm-6">
+                  <div class="container container-mh container-card wrap-container-card">
+                    <div class="row  justify-content-between row-header-card">
+                      <div class="col-md-2"><img class="logo-container"
+                          src="https://yt3.ggpht.com/ueLrU3iV27jy17dGmz4y3QB_3_y5Z48kZLvFNJS4Br7RNs1Bg6mFDNuHdizC09iJWfuF1vEBu0g=s68-c-k-c0x00ffffff-no-rj"
+                          alt="logo-container"></div>
+                      <div class="col-md-8">
+                        <h5 class="card-title">Trang Min Cao Tuyen</h5>
+                        <h5 class="col-note">69.5k Subscribe</h5>
+                      </div>
+                      <div class="col-md-2"><button type="button" class="btn btn-dark btn-subscribe">Subscribe</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-xl-6 col-lg-8 col-sm-6">
+                  <div class="container container-mh container-card">
+                    <div class="row  justify-content-between row-header-card">
+                      <div class="col-md-6 ml-5">
+                        <!-- button-hand-thumbs -->
+                        <div class="button-hand-thumbs">
+                          <button class="button-hand-thumbs-up">
+                            <i class="bi bi-hand-thumbs-up">154</i>
+                          </button>
+                          <button class="button-hand-thumbs-down">
+                            <i class="bi bi-hand-thumbs-down"></i>
+                          </button>
+                        </div>
+
+                      </div>
+                      <div class="col-md-4">
+                        <button class="button-share"><i class="bi bi-arrow-90deg-right"></i> Chia sẻ</button>
+                      </div>
+                      <div class="col-md-2"><button class="button-three-dots"><i class="bi bi-three-dots"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="container container-mh container-description mt-sm-5">
+              <p class="long-text">
+                <!-- Đoạn văn dài ở đây -->
+                100.375 lượt xem Đã công chiếu vào 27 thg 12, 2022 #ÂmNhạcHoàiCổ #NhạcCổPhong
+                TUYỂN CHỌN Nhạc Phim Cổ Trang Hay Nhất Nổi Tiếng Nhất | Hòa Tấu Sáo Trúc, Đàn Tranh Thư Thái Tâm Hồn
+                📌 Link Video: https://youtu.be/UFpID2m3hYw
+                🎵 Danh sách nhạc:
+                [00:00:00] - 01. Tình Yêu
+                [00:03:23] - 02. Tình sầu
+              </p>
+
+              <a class="read-more" href="#">Hiện thêm</a>
+
+            </div>
+
+            <div class="comments-header">
+              <div class="btn-group btn-group-comments-header" role="group"
+                aria-label="Button group with nested dropdown">
+                <button type="button" class="btn btn-secondary btn-count-comments" disabled>8 Bình luận</button>
+
+                <div class="btn-group btn-group-sort" role="group">
+                  <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle btn-sort"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="bi bi-sort-up"></i> Sắp xếp theo
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-comment" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item dropdown-item-comment" href="#">Bình luận hàng đầu</a>
+                    <a class="dropdown-item dropdown-item-comment" href="#">Mới nhất xem trước</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- comment section -->
+            <div class="comments-section">
+              <div class="container container-mh">
+                <div class="row">
+                  <div class="col-2 col-md-1">
+                    <img class="logo-container"
+                      src="https://yt3.ggpht.com/6Rmy6TRlIX5HpybaH3WPn8sjCGOz88zT3HcfxK20buAtOcZ19FeP1C_rhUO7JXgm9f5zH92v=s48-c-k-c0x00ffffff-no-rj"
+                      alt="logo-container">
+                  </div>
+                  <div class="col-12 col-md-11">
+                    <div class="row">
+                      <div class="col">
+                        <input type="text" placeholder="Viết bình luận" class="input-comment">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container container-mh all-comments">
+                <div class="row row-comments">
+                  <div class="col-2 col-md-1">
+                    <img class="logo-container"
+                      src="https://yt3.ggpht.com/22u3FHlcWkqFaLXJriEJctC7zsr9JzeliZ0YR_DqHS7PjOSAOfuYKa0CI6Z7b4DXbXbuxIzxzg=s48-c-k-c0x00ffffff-no-rj"
+                      alt="logo-container">
+                  </div>
+                  <div class="col-12 col-md-11">
+                    <div class="row content-comments">
+                      <div class="col col-header-comments">
+                        <h5 class="name-user-comment">@MaiHuong1102</h5>
+                        <h5 class="count-time">3 năm trước</h5>
+                      </div>
+                      <div class="col col-header-comments">
+                        <p>Trời mưa to nên mở nhạc Đĩa Than nghe đỉnh quá❤️</p>
+                      </div>
+                      <div class="col col-header-comments">
+                        <i class="bi bi-hand-thumbs-up group-like-comment"></i>
+                        <h5 class="group-like-comment">165</h5>
+                        <i class="bi bi-hand-thumbs-down group-like-comment"></i>
+                        <h5 class="group-like-comment">Phản hồi</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row row-comments mt-sm-5">
+                  <div class="col-2 col-md-1">
+                    <img class="logo-container"
+                      src="https://yt3.ggpht.com/ytc/AL5GRJUShGB1-NR3wPMl46ALNYHLQRVplt4qbS_RmKlK=s48-c-k-c0x00ffffff-no-rj"
+                      alt="logo-container">
+                  </div>
+                  <div class="col-12 col-md-11">
+                    <div class="row content-comments">
+                      <div class="col col-header-comments">
+                        <h5 class="name-user-comment">@MaiHuong1102</h5>
+                        <h5 class="count-time">3 năm trước</h5>
+                      </div>
+                      <div class="col col-header-comments">
+                        <p>Trời mưa to nên mở nhạc Đĩa Than nghe đỉnh quá❤️</p>
+                      </div>
+                      <div class="col col-header-comments">
+                        <i class="bi bi-hand-thumbs-up group-like-comment"></i>
+                        <h5 class="group-like-comment">165</h5>
+                        <i class="bi bi-hand-thumbs-down group-like-comment"></i>
+                        <h5 class="group-like-comment">Phản hồi</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row row-comments mt-sm-5">
+                  <div class="col-2 col-md-1">
+                    <img class="logo-container"
+                      src="https://yt3.ggpht.com/s89kTGn6gqp5TtLCScmJJyq0EYpf72dnNXeNacUkbYLtYKdWUwa8-4U77oq8V5gcJVid37FaVfo=s48-c-k-c0x00ffffff-no-rj"
+                      alt="logo-container">
+                  </div>
+                  <div class="col-12 col-md-11">
+                    <div class="row content-comments">
+                      <div class="col col-header-comments">
+                        <h5 class="name-user-comment">@MaiHuong1102</h5>
+                        <h5 class="count-time">3 năm trước</h5>
+                      </div>
+                      <div class="col col-header-comments">
+                        <p>Trời mưa to nên mở nhạc Đĩa Than nghe đỉnh quá❤️</p>
+                      </div>
+                      <div class="col col-header-comments">
+                        <i class="bi bi-hand-thumbs-up group-like-comment"></i>
+                        <h5 class="group-like-comment">165</h5>
+                        <i class="bi bi-hand-thumbs-down group-like-comment"></i>
+                        <h5 class="group-like-comment">Phản hồi</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row row-comments mt-sm-5">
+                  <div class="col-2 col-md-1">
+                    <img class="logo-container"
+                      src="https://yt3.ggpht.com/ueLrU3iV27jy17dGmz4y3QB_3_y5Z48kZLvFNJS4Br7RNs1Bg6mFDNuHdizC09iJWfuF1vEBu0g=s68-c-k-c0x00ffffff-no-rj"
+                      alt="logo-container">
+                  </div>
+                  <div class="col-12 col-md-11">
+                    <div class="row content-comments">
+                      <div class="col col-header-comments">
+                        <h5 class="name-user-comment">@MaiHuong1102</h5>
+                        <h5 class="count-time">3 năm trước</h5>
+                      </div>
+                      <div class="col col-header-comments">
+                        <p>Trời mưa to nên mở nhạc Đĩa Than nghe đỉnh quá❤️</p>
+                      </div>
+                      <div class="col col-header-comments">
+                        <i class="bi bi-hand-thumbs-up group-like-comment"></i>
+                        <h5 class="group-like-comment">165</h5>
+                        <i class="bi bi-hand-thumbs-down group-like-comment"></i>
+                        <h5 class="group-like-comment">Phản hồi</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div style="margin-top: 50px;" class="dropdown-divider"></div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <div style="padding-left: 34px;" class="col-12 col-md-12 col-lg-12 col-xl-5 pt-5 pt-lg-0 ">
+          <div class="container-scroll container-scroll-detail">
+            <button type="button" class="btn btn-link btn-previous"><i class="bi bi-chevron-compact-left"></i></button>
+
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <button type="button" class="swiper-slide btn-dark">Tất cả</button>
+                <button type="button" class="swiper-slide btn-light">Âm nhạc</button>
+                <button type="button" class="swiper-slide btn-light">Danh sách kết hợp</button>
+                <button type="button" class="swiper-slide btn-light">Trực tiếp</button>
+                <button type="button" class="swiper-slide btn-light">Trò chơi</button>
+                <button type="button" class="swiper-slide btn-light">Tin tức</button>
+                <button type="button" class="swiper-slide btn-light">Hoạt họa</button>
+                <button type="button" class="swiper-slide btn-light">Trò chơi hành động phiêu lưu</button>
+                <button type="button" class="swiper-slide btn-light">Mới tải lên gần đây</button>
+                <button type="button" class="swiper-slide btn-light">Đã xem</button>
+
+                <button type="button" class="swiper-slide btn-light">Trò chơi hành động phiêu lưu</button>
+                <button type="button" class="swiper-slide btn-light">Mới tải lên gần đây</button>
+                <button type="button" class="swiper-slide btn-light">Đã xem</button>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+
+            <button type="button" class="btn btn-link btn-next"><i class="bi bi-chevron-compact-right"></i></button>
+          </div>
+
+
+            <div class="col ">
+              <div class="container container-mh container-card-sidebar">
+                <div class="row  justify-content-between row-header-card">
+                  <div class="col-md-4 col-md-4-padding-left">
+                    <a href="./detailPage.html">
+                      <img class="card-img-detail" src="https://img.youtube.com/vi/UFpID2m3hYw/sddefault.jpg"
+                        alt="Nhạc việt">
+                    </a>
+                  </div>
+                  <div class="col-md-6 content-card">
+                    <h5 class="card-title">RỒI VỀ BÊN AI ĐẮM SAY TRỌN VẸN TƯƠNG LAI - DẠO NÀY EM </h5>
+                    <h5 class="col-note">Gió đông chill</h5>
+                    <h5 class="col-note">25N lượt xem</h5>
+                    <h5 class="col-note">Mới</h5>
+                  </div>
+                  <div class="col-md-2"><button type="button" class="button-three-dots-card"><i
+                        class="bi bi-three-dots-vertical"></i></button></div>
+                </div>
+              </div>
+
+              <div class="col col-detail-sidebar-left">
+                <div class="container container-mh container-card-sidebar">
+                  <div class="row  justify-content-between row-header-card">
+                    <div class="col-md-4 col-md-4-padding-left">
+                      <a href="./detailPage.html">
+                        <img class="card-img-detail" src="https://img.youtube.com/vi/TEcwLX0wGw8/sddefault.jpg"
+                          alt="Nhạc việt">
+                      </a>
+                    </div>
+                    <div class="col-md-6 content-card">
+                      <h5 class="card-title">RỒI VỀ BÊN AI ĐẮM SAY TRỌN VẸN TƯƠNG LAI - DẠO NÀY EM </h5>
+                      <h5 class="col-note">Gió đông chill</h5>
+                      <h5 class="col-note">25N lượt xem</h5>
+                      <h5 class="col-note">Mới</h5>
+                    </div>
+                    <div class="col-md-2"><button type="button" class="button-three-dots-card"><i
+                          class="bi bi-three-dots-vertical"></i></button></div>
+                  </div>
+                </div>
+
+                <div class="col col-detail-sidebar-left">
+                  <div class="container container-mh container-card-sidebar">
+                    <div class="row  justify-content-between row-header-card">
+                      <div class="col-md-4 col-md-4-padding-left">
+                        <a href="./detailPage.html">
+                          <img class="card-img-detail" src="https://img.youtube.com/vi/wcM83vBgDV4/sddefault.jpg"
+                            alt="Nhạc việt">
+                        </a>
+                      </div>
+                      <div class="col-md-6 content-card">
+                        <h5 class="card-title">RỒI VỀ BÊN AI ĐẮM SAY TRỌN VẸN TƯƠNG LAI - DẠO NÀY EM </h5>
+                        <h5 class="col-note">Gió đông chill</h5>
+                        <h5 class="col-note">25N lượt xem</h5>
+                        <h5 class="col-note">Mới</h5>
+                      </div>
+                      <div class="col-md-2"><button type="button" class="button-three-dots-card"><i
+                            class="bi bi-three-dots-vertical"></i></button></div>
+                    </div>
+                  </div>
+
+                  <div class="col col-detail-sidebar-left">
+                    <div class="container container-mh container-card-sidebar">
+                      <div class="row  justify-content-between row-header-card">
+                        <div class="col-md-4 col-md-4-padding-left">
+                          <a href="./detailPage.html">
+                            <img class="card-img-detail" src="https://img.youtube.com/vi/Md-Y4CXGyf0/sddefault.jpg"
+                              alt="Nhạc việt">
+                          </a>
+                        </div>
+                        <div class="col-md-6 content-card">
+                          <h5 class="card-title">RỒI VỀ BÊN AI ĐẮM SAY TRỌN VẸN TƯƠNG LAI - DẠO NÀY EM </h5>
+                          <h5 class="col-note">Gió đông chill</h5>
+                          <h5 class="col-note">25N lượt xem</h5>
+                          <h5 class="col-note">Mới</h5>
+                        </div>
+                        <div class="col-md-2"><button type="button" class="button-three-dots-card"><i
+                              class="bi bi-three-dots-vertical"></i></button></div>
+                      </div>
+                    </div>
+
+                    <div class="col col-detail-sidebar-left">
+                      <div class="container container-mh container-card-sidebar">
+                        <div class="row  justify-content-between row-header-card">
+                          <div class="col-md-4 col-md-4-padding-left">
+                            <a href="./detailPage.html">
+                              <img class="card-img-detail" src="https://img.youtube.com/vi/42zg2d_A25E/sddefault.jpg"
+                                alt="Nhạc việt">
+                            </a>
+                          </div>
+                          <div class="col-md-6 content-card">
+                            <h5 class="card-title">RỒI VỀ BÊN AI ĐẮM SAY TRỌN VẸN TƯƠNG LAI - DẠO NÀY EM </h5>
+                            <h5 class="col-note">Gió đông chill</h5>
+                            <h5 class="col-note">25N lượt xem</h5>
+                            <h5 class="col-note">Mới</h5>
+                          </div>
+                          <div class="col-md-2"><button type="button" class="button-three-dots-card"><i
+                                class="bi bi-three-dots-vertical"></i></button></div>
+                        </div>
+                      </div>
+
+                      <div class="col col-detail-sidebar-left">
+                        <div class="container container-mh container-card-sidebar">
+                          <div class="row  justify-content-between row-header-card">
+                            <div class="col-md-4 col-md-4-padding-left">
+                              <a href="./detailPage.html">
+                                <img class="card-img-detail" src="https://img.youtube.com/vi/T1AoJRdC_8A/sddefault.jpg"
+                                  alt="Nhạc việt">
+                              </a>
+                            </div>
+                            <div class="col-md-6 content-card">
+                              <h5 class="card-title">RỒI VỀ BÊN AI ĐẮM SAY TRỌN VẸN TƯƠNG LAI - DẠO NÀY EM </h5>
+                              <h5 class="col-note">Gió đông chill</h5>
+                              <h5 class="col-note">25N lượt xem</h5>
+                              <h5 class="col-note">Mới</h5>
+                            </div>
+                            <div class="col-md-2"><button type="button" class="button-three-dots-card"><i
+                                  class="bi bi-three-dots-vertical"></i></button></div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./public/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>

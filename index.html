@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <div class="sticky-wrap">
+        <header class="wrapper-header">
+          <div class="row inner">
+            <div class="col">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"
+                  ><i class="bi bi-list"></i
+                ></span>
+              </button>
+
+              <div
+                class="collapse navbar-collapse fixed-bottom ml-auto sidebar-detail"
+                id="navbarNav"
+              >
+                <ul class="navbar-nav">
+                  <div class="sidebar">
+                    <div class="sidebar-header">
+                      <div class="logo">
+                        <button
+                          class="navbar-toggler"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#navbarNav"
+                          aria-controls="navbarNav"
+                          aria-expanded="false"
+                          aria-label="Toggle navigation"
+                        >
+                          <span class="navbar-toggler-icon"
+                            ><i class="bi bi-list"></i
+                          ></span>
+                        </button>
+                        <img
+                          class="logo-youtube-sidebar"
+                          src="./public/image/logo.jpg"
+                          alt="Logo YouTube"
+                        />
+                      </div>
+                    </div>
+                    <ul class="sidebar-menu">
+                      <li>
+                        <i class="bi bi-house-door-fill"></i
+                        ><a href="#">Trang chủ</a>
+                      </li>
+                      <li>
+                        <i class="bi bi-device-ssd"></i><a href="#">Shorts</a>
+                      </li>
+                      <li>
+                        <i class="bi bi-collection-play"></i
+                        ><a href="#">Kênh đăng kí</a>
+                      </li>
+                      <div class="dropdown-divider"></div>
+                      <li>
+                        <i class="bi bi-aspect-ratio"></i
+                        ><a href="#">Thư viện</a>
+                      </li>
+                      <li>
+                        <i class="bi bi-alarm"></i><a href="#">Video đã xem</a>
+                      </li>
+                      <li>
+                        <i class="bi bi-collection-play"></i
+                        ><a href="#">Video xem sau</a>
+                      </li>
+                      <li>
+                        <i class="bi bi-award"></i><a href="#">Xem sau</a>
+                      </li>
+                      <li>
+                        <i class="bi bi-hand-thumbs-up"></i
+                        ><a href="#">Video đã thíc</a>
+                      </li>
+                      <li>
+                        <i class="bi bi-collection-play"></i
+                        ><a href="#">NGỮ PHÁP TOEIC</a>
+                      </li>
+                      <div class="dropdown-divider"></div>
+
+                      <li>Kênh đăng kí</li>
+                      <li>
+                        <img
+                          class="logo-container"
+                          src="https://yt3.ggpht.com/s89kTGn6gqp5TtLCScmJJyq0EYpf72dnNXeNacUkbYLtYKdWUwa8-4U77oq8V5gcJVid37FaVfo=s48-c-k-c0x00ffffff-no-rj"
+                          alt="logo-container"
+                        />
+                        <a href="#">@ThanhHai</a>
+                      </li>
+                      <li>
+                        <img
+                          class="logo-container"
+                          src="https://yt3.ggpht.com/ueLrU3iV27jy17dGmz4y3QB_3_y5Z48kZLvFNJS4Br7RNs1Bg6mFDNuHdizC09iJWfuF1vEBu0g=s68-c-k-c0x00ffffff-no-rj"
+                          alt="logo-container"
+                        />
+                        <a href="#">@TraGiang</a>
+                      </li>
+                      <li>
+                        <img
+                          class="logo-container"
+                          src="https://yt3.ggpht.com/6Rmy6TRlIX5HpybaH3WPn8sjCGOz88zT3HcfxK20buAtOcZ19FeP1C_rhUO7JXgm9f5zH92v=s48-c-k-c0x00ffffff-no-rj"
+                          alt="logo-container"
+                        />
+                        <a href="#">@MaiHuong</a>
+                      </li>
+                      <div class="dropdown-divider"></div>
+                    </ul>
+                    <div class="sidebar-footer">
+                      <h5>
+                        Giới thiệu báo chí bản quyền liên hệ với chúng tôi,
+                        người sáng tạo quảng cáo nhà phát triển
+                      </h5>
+                      <p>© 2023 YouTube, LLC</p>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+              <img
+                src="./public/image/logo.jpg"
+                class="logo-youtube"
+                alt="Logo YouTube"
+              />
+            </div>
+
+            <div class="col-6 search-all">
+              <div class="search">
+                <input placeholder="Tìm kiếm" spellcheck="false" />
+
+                <button class="keyboard">
+                  <i class="bi bi-keyboard-fill"></i>
+                </button>
+                <button class="search-btn">
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
+
+              <button class="mic-fill"><i class="bi bi-mic-fill"></i></button>
+            </div>
+
+            <div class="col action text-right">
+              <!-- <button class="dice-6"><i class="bi bi-dice-6"></i></button> -->
+              <button class="dice-3">
+                <i class="bi bi-three-dots-vertical"></i>
+              </button>
+              <button class="button-sign-in">
+                <i class="bi bi-person-circle"></i> SIGN IN
+              </button>
+            </div>
+          </div>
+        </header>
+
+        <div class="container-scroll">
+          <button type="button" class="btn btn-link btn-previous">
+            <i class="bi bi-chevron-compact-left"></i>
+          </button>
+
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <button type="button" class="swiper-slide btn-dark">
+                Tất cả
+              </button>
+              <button type="button" class="swiper-slide btn-light">
+                Âm nhạc
+              </button>
+              <button type="button" class="swiper-slide btn-light">
+                Danh sách kết hợp
+              </button>
+              <button type="button" class="swiper-slide btn-light">
+                Trực tiếp
+              </button>
+              <button type="button" class="swiper-slide btn-light">
+                Trò chơi
+              </button>
+              <button type="button" class="swiper-slide btn-light">
+                Tin tức
+              </button>
+              <button type="button" class="swiper-slide btn-light">
+                Hoạt họa
+              </button>
+              <button type="button" class="swiper-slide btn-light">
+                Trò chơi hành động phiêu lưu
+              </button>
+              <button type="button" class="swiper-slide btn-light">
+                Mới tải lên gần đây
+              </button>
+              <button type="button" class="swiper-slide btn-light">
+                Đã xem
+              </button>
+
+              <button type="button" class="swiper-slide btn-light">
+                Trò chơi hành động phiêu lưu
+              </button>
+              <button type="button" class="swiper-slide btn-light">
+                Mới tải lên gần đây
+              </button>
+              <button type="button" class="swiper-slide btn-light">
+                Đã xem
+              </button>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+
+          <button type="button" class="btn btn-link btn-next">
+            <i class="bi bi-chevron-compact-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="container container-mh">
+        <aside class="wrapper-aside">
+          <ul class="sidebar-menu-link">
+            <li class="center-icon">
+              <i class="bi bi-house-door-fill"></i
+              ><a class="sidebar-menu-link" href="#">Trang chủ</a>
+            </li>
+            <li class="center-icon">
+              <i class="bi bi-collection-play"></i><br /><a
+                href="#"
+                class="d-none d-lg-inline-block"
+                >Đăng kí</a
+              >
+            </li>
+            <li class="center-icon">
+              <i class="bi bi-collection-play"></i><br /><a
+                href="#"
+                class="d-none d-lg-inline-block"
+                >Thư viện</a
+              >
+            </li>
+            <li class="center-icon">
+              <i class="bi bi-house-door-fill"></i><br /><a
+                href="#"
+                class="d-none d-lg-inline-block"
+                >Trang chủ</a
+              >
+            </li>
+            <li class="center-icon">
+              <i class="bi bi-collection-play"></i><br /><a
+                href="#"
+                class="d-none d-lg-inline-block"
+                >Đăng kí</a
+              >
+            </li>
+            <li class="center-icon">
+              <i class="bi bi-collection-play"></i><br /><a
+                href="#"
+                class="d-none d-lg-inline-block"
+                >Thư viện</a
+              >
+            </li>
+          </ul>
+        </aside>
+
+        <!-- content -->
+        <div style="margin-top: 105px;" class="content">
+          <div class="container container-mh">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card card-course-item">
+                  <div class="card-body">
+                    <a href="./detailPage.html">
+                      <div class="card-img">
+                        <img
+                          class="card-img-top"
+                          src="https://img.youtube.com/vi/Z5iPD1S84Yc/sddefault.jpg"
+                          alt="Nhạc việt"
+                        />
+                      </div>
+                    </a>
+                    <div class="container  container-card">
+                      <div class="row justify-content-between row-header-card">
+                        <div class="d-flex">
+                          <img
+                            class="logo-container"
+                            src="https://yt3.ggpht.com/ueLrU3iV27jy17dGmz4y3QB_3_y5Z48kZLvFNJS4Br7RNs1Bg6mFDNuHdizC09iJWfuF1vEBu0g=s68-c-k-c0x00ffffff-no-rj"
+                            alt="logo-container"
+                          />
+                          <h5 class="card-title d-block mx-2">
+                            Ngày Hôm Ấy Em Buông Tay Anh Vì Lý Do Gì
+                          </h5>
+                          <button class="dice-3 mr-4">
+                            <i class="bi bi-three-dots-vertical"></i>
+                          </button>
+                        </div>
+                        <div class="col-md-8 ml-5">
+                          <h5 class="col-note">Qinn remix Gió Đông Chill</h5>
+                          <h5 class="col-note">1 month ago</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card card-course-item">
+                  <div class="card-body">
+                    <a href="./detailPage.html">
+                      <div class="card-img">
+                        <img
+                          class="card-img-top"
+                          src="https://img.youtube.com/vi/2Q5iPi9ldAA/sddefault.jpg"
+                          alt="Nhạc việt"
+                        />
+                      </div>
+                    </a>
+                    <div class="container container-card">
+                <div class="row  justify-content-between row-header-card">
+                      <div class="d-flex">
+                        <img class="logo-container"
+                          src="https://yt3.ggpht.com/ueLrU3iV27jy17dGmz4y3QB_3_y5Z48kZLvFNJS4Br7RNs1Bg6mFDNuHdizC09iJWfuF1vEBu0g=s68-c-k-c0x00ffffff-no-rj"
+                          alt="logo-container"
+                        >
+                        <h5 class="card-title d-block mx-2">Ngày Hôm Ấy Em Buông Tay Anh Vì Lý Do Gì</h5>
+                        <button class="dice-3 mr-4"><i class="bi bi-three-dots-vertical"></i></button>
+                      </div>
+                      <div class="col-md-8 ml-5">
+                        <h5 class="col-note">Qinn remix Gió Đông Chill</h5>
+                        <h5 class="col-note">1 month ago</h5>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card card-course-item">
+                  <div class="card-body">
+                    <a href="./detailPage.html">
+                      <div class="card-img">
+                        <img
+                          class="card-img-top"
+                          src="https://img.youtube.com/vi/r5YZY2N6UWg/sddefault.jpg"
+                          alt="Nhạc việt"
+                        />
+                      </div>
+                    </a>
+                    <div class="container container-card">
+                <div class="row  justify-content-between row-header-card">
+                      <div class="d-flex">
+                        <img class="logo-container"
+                          src="https://yt3.ggpht.com/ueLrU3iV27jy17dGmz4y3QB_3_y5Z48kZLvFNJS4Br7RNs1Bg6mFDNuHdizC09iJWfuF1vEBu0g=s68-c-k-c0x00ffffff-no-rj"
+                          alt="logo-container"
+                        >
+                        <h5 class="card-title d-block mx-2">Ngày Hôm Ấy Em Buông Tay Anh Vì Lý Do Gì</h5>
+                        <button class="dice-3 mr-4"><i class="bi bi-three-dots-vertical"></i></button>
+                      </div>
+                      <div class="col-md-8 ml-5">
+                        <h5 class="col-note">Qinn remix Gió Đông Chill</h5>
+                        <h5 class="col-note">1 month ago</h5>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card card-course-item">
+                  <div class="card-body">
+                    <a href="./detailPage.html">
+                      <div class="card-img">
+                        <img
+                          class="card-img-top"
+                          src="https://img.youtube.com/vi/1U973ef6kJE/sddefault.jpg"
+                          alt="Nhạc việt"
+                        />
+                      </div>
+                    </a>
+                    <div class="container container-card">
+                <div class="row  justify-content-between row-header-card">
+                      <div class="d-flex">
+                        <img class="logo-container"
+                          src="https://yt3.ggpht.com/ueLrU3iV27jy17dGmz4y3QB_3_y5Z48kZLvFNJS4Br7RNs1Bg6mFDNuHdizC09iJWfuF1vEBu0g=s68-c-k-c0x00ffffff-no-rj"
+                          alt="logo-container"
+                        >
+                        <h5 class="card-title d-block mx-2">Ngày Hôm Ấy Em Buông Tay Anh Vì Lý Do Gì</h5>
+                        <button class="dice-3 mr-4"><i class="bi bi-three-dots-vertical"></i></button>
+                      </div>
+                      <div class="col-md-8 ml-5">
+                        <h5 class="col-note">Qinn remix Gió Đông Chill</h5>
+                        <h5 class="col-note">1 month ago</h5>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card card-course-item">
+                  <div class="card-body">
+                    <a href="./detailPage.html">
+                      <div class="card-img">
+                        <img
+                          class="card-img-top"
+                          src="https://img.youtube.com/vi/UIlTTTdv7c0/sddefault.jpg"
+                          alt="Nhạc việt"
+                        />
+                      </div>
+                    </a>
+                    <div class="container container-card">
+                <div class="row  justify-content-between row-header-card">
+                      <div class="d-flex">
+                        <img class="logo-container"
+                          src="https://yt3.ggpht.com/ueLrU3iV27jy17dGmz4y3QB_3_y5Z48kZLvFNJS4Br7RNs1Bg6mFDNuHdizC09iJWfuF1vEBu0g=s68-c-k-c0x00ffffff-no-rj"
+                          alt="logo-container"
+                        >
+                        <h5 class="card-title d-block mx-2">Ngày Hôm Ấy Em Buông Tay Anh Vì Lý Do Gì</h5>
+                        <button class="dice-3 mr-4"><i class="bi bi-three-dots-vertical"></i></button>
+                      </div>
+                      <div class="col-md-8 ml-5">
+                        <h5 class="col-note">Qinn remix Gió Đông Chill</h5>
+                        <h5 class="col-note">1 month ago</h5>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card card-course-item">
+                  <div class="card-body">
+                    <a href="./detailPage.html">
+                      <div class="card-img">
+                        <img
+                          class="card-img-top"
+                          src="https://img.youtube.com/vi/etKBm259C_w/sddefault.jpg"
+                          alt="Nhạc việt"
+                        />
+                      </div>
+                    </a>
+                    <div class="container container-card">
+                <div class="row  justify-content-between row-header-card">
+                      <div class="d-flex">
+                        <img class="logo-container"
+                          src="https://yt3.ggpht.com/ueLrU3iV27jy17dGmz4y3QB_3_y5Z48kZLvFNJS4Br7RNs1Bg6mFDNuHdizC09iJWfuF1vEBu0g=s68-c-k-c0x00ffffff-no-rj"
+                          alt="logo-container"
+                        >
+                        <h5 class="card-title d-block mx-2">Ngày Hôm Ấy Em Buông Tay Anh Vì Lý Do Gì</h5>
+                        <button class="dice-3 mr-4"><i class="bi bi-three-dots-vertical"></i></button>
+                      </div>
+                      <div class="col-md-8 ml-5">
+                        <h5 class="col-note">Qinn remix Gió Đông Chill</h5>
+                        <h5 class="col-note">1 month ago</h5>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card card-course-item">
+                  <div class="card-body">
+                    <a href="./detailPage.html">
+                      <div class="card-img">
+                        <img
+                          class="card-img-top"
+                          src="https://img.youtube.com/vi/etKBm259C_w/sddefault.jpg"
+                          alt="Nhạc việt"
+                        />
+                      </div>
+                    </a>
+                    <div class="container container-card">
+                <div class="row  justify-content-between row-header-card">
+                      <div class="d-flex">
+                        <img class="logo-container"
+                          src="https://yt3.ggpht.com/ueLrU3iV27jy17dGmz4y3QB_3_y5Z48kZLvFNJS4Br7RNs1Bg6mFDNuHdizC09iJWfuF1vEBu0g=s68-c-k-c0x00ffffff-no-rj"
+                          alt="logo-container"
+                        >
+                        <h5 class="card-title d-block mx-2">Ngày Hôm Ấy Em Buông Tay Anh Vì Lý Do Gì</h5>
+                        <button class="dice-3 mr-4"><i class="bi bi-three-dots-vertical"></i></button>
+                      </div>
+                      <div class="col-md-8 ml-5">
+                        <h5 class="col-note">Qinn remix Gió Đông Chill</h5>
+                        <h5 class="col-note">1 month ago</h5>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card card-course-item">
+                  <div class="card-body">
+                    <a href="./detailPage.html">
+                      <div class="card-img">
+                        <img
+                          class="card-img-top"
+                          src="https://img.youtube.com/vi/etKBm259C_w/sddefault.jpg"
+                          alt="Nhạc việt"
+                        />
+                      </div>
+                    </a>
+                    <div class="container container-card">
+                <div class="row  justify-content-between row-header-card">
+                      <div class="d-flex">
+                        <img class="logo-container"
+                          src="https://yt3.ggpht.com/ueLrU3iV27jy17dGmz4y3QB_3_y5Z48kZLvFNJS4Br7RNs1Bg6mFDNuHdizC09iJWfuF1vEBu0g=s68-c-k-c0x00ffffff-no-rj"
+                          alt="logo-container"
+                        >
+                        <h5 class="card-title d-block mx-2">Ngày Hôm Ấy Em Buông Tay Anh Vì Lý Do Gì</h5>
+                        <button class="dice-3 mr-4"><i class="bi bi-three-dots-vertical"></i></button>
+                      </div>
+                      <div class="col-md-8 ml-5">
+                        <h5 class="col-note">Qinn remix Gió Đông Chill</h5>
+                        <h5 class="col-note">1 month ago</h5>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="card card-course-item">
+                  <div class="card-body">
+                    <a href="./detailPage.html">
+                      <div class="card-img">
+                        <img
+                          class="card-img-top"
+                          src="https://img.youtube.com/vi/etKBm259C_w/sddefault.jpg"
+                          alt="Nhạc việt"
+                        />
+                      </div>
+                    </a>
+                    <div class="container container-card">
+                <div class="row  justify-content-between row-header-card">
+                      <div class="d-flex">
+                        <img class="logo-container"
+                          src="https://yt3.ggpht.com/ueLrU3iV27jy17dGmz4y3QB_3_y5Z48kZLvFNJS4Br7RNs1Bg6mFDNuHdizC09iJWfuF1vEBu0g=s68-c-k-c0x00ffffff-no-rj"
+                          alt="logo-container"
+                        >
+                        <h5 class="card-title d-block mx-2">Ngày Hôm Ấy Em Buông Tay Anh Vì Lý Do Gì</h5>
+                        <button class="dice-3 mr-4"><i class="bi bi-three-dots-vertical"></i></button>
+                      </div>
+                      <div class="col-md-8 ml-5">
+                        <h5 class="col-note">Qinn remix Gió Đông Chill</h5>
+                        <h5 class="col-note">1 month ago</h5>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./public/script.js"></script>
+  </body>
+</html>
